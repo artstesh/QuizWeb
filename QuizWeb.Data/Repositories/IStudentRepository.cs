@@ -9,7 +9,7 @@ namespace QuizWeb.Data.Repositories
         Task<List<StudentModel>> Get();
         Task<StudentModel> Get(string login);
         Task<StudentModel> Get(int id);
-        Task<bool> Add(StudentModel model);
+        Task<int> Add(StudentModel model);
         Task<bool> Update(StudentModel model);
     }
 }
