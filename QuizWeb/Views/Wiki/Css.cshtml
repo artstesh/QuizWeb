@@ -1,0 +1,15 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Html/Css/Js";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Html/Css/Js</h2>
+<div>
+    <ul>
+        <li>@Html.ActionLink("Html/Css/Js Level 0", "CssZeroLevel")</li>
+        <li>@Html.ActionLink("Html/Css/Js Level 1", "CssFirstLevel")</li>
+        <li>@Html.ActionLink("Html/Css/Js Level 2", "CssSecondLevel")</li>
+    </ul>
+</div>

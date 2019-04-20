@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="56d6dad0-537d-4324-a6b3-40e8b5abf89c" name="quiz.artstesh.ru" url="http://quiz.artstesh.ru">
+        <fileTransfer host="31.31.196.80" port="21" rootFolder="/quiz.artstesh.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

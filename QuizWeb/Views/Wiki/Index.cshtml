@@ -1,0 +1,16 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Wiki";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Wiki</h2>
+<div>
+    <ul>
+        <li>@Html.ActionLink("C#", "Csharp")</li>
+        <li>@Html.ActionLink("Asp", "Asp")</li>
+        <li>@Html.ActionLink("Html/Css/Js", "Css")</li>
+        <li>@Html.ActionLink("Sql", "Sql")</li>
+    </ul>
+</div>

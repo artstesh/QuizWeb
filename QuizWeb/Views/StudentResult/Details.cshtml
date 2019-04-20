@@ -1,0 +1,39 @@
+﻿@model QuizWeb.Data.Models.UserResult
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <table class="table table-bordered">
+        <tr>
+            <td> @Model.ThemeName</td>
+            <td>
+                @{
+                    var mainVal = Model.TotalAnswers > 0 ? (((decimal)Model.CorrectAnswers / Model.TotalAnswers) * 100).ToString("F") : "";
+                }
+                @mainVal % (@Model.CorrectAnswers из @Model.TotalAnswers)
+            </td>
+        </tr>
+        @foreach (var theme in Model.SubThemesResult)
+        {
+            <tr>
+                <td> @theme.ThemeName</td>
+                <td>
+                    @{
+                        var value = theme.TotalAnswers > 0 ? (((decimal)theme.CorrectAnswers / theme.TotalAnswers) * 100).ToString("F") : "";
+                    }
+                    @value % (@theme.CorrectAnswers из @theme.TotalAnswers)
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", new{controller="Student"})
+</p>
